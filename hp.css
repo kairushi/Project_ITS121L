@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+}          
+
+.header {
+    width: 80%;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 30px auto;
+}
+        
+.logo {
+    display: block;
+    width: 180px;
+    margin-left: 40px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    text-align: right;
+}
+
+ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 15px;
+}
+   
+ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 0 5px;
+    position: relative;
+}
+
+ul li a::after{
+    content: '';
+    width: 0;
+    height: 10px;
+    background: #FFFFFF;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -65px;
+    transition: 0.5s;
+}
+
+ul li a:hover::after{
+    width: 100%;
+    
+}
+
+.banner{
+    display: flex;
+    margin-top: 80px;
+    
+}
+
+.left-column,.right-column{
+    flex-basis: 50%;
+}
+
+.right-column img{
+    width: 100%;
+}
+
+.search-box{
+    width: 45%;
+    display: flex;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0 30px;
+    
+}
+
+.search-box img{
+    width: 10%;
+    height: 10%;
+    cursor: pointer;
+    
+}
+
+.search-box input{
+    background: #041c2c;
+    width: 100%;
+    margin-left: 15px;
+    font-size: 17px;
+    border: 0;
+    outline: none;
+}
+
+.left-column h1{
+    font-size: 100px;
+}
+
+.left-column h3{
+    font-size: 35px;
+}
+
+span{
+    color:#AA98A9;	
+}
+
+.bt button{
+    padding: 7px 30px;
+    margin-right: 15px;
+    outline: none;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #FFFFFF;
+    background: transparent;
+    
+}
+
+.bt a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+body {
+background: #041c2c;
+background-size: cover;
+color: #FFFFFF;
+box-sizing: border-box;
+}
